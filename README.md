@@ -29,7 +29,15 @@ A web application that allows users to simulate and evaluate NBA draft pick trad
 - Draft pick values are based on [Draft Pick Trade Value Chart - 2017 Version - Kevin Pelton](http://nbasense.com/draft-pick-trade-value/2/kevin-pelton-2), with each pick assigned a normalized value.
 - Each trade is calculated in real-time using the sum of pick values per team.
 - A basic warning system flags when a trade favors one side.
-- Users can save trade concepts (localStoarage) and compare multiple trade concepts.
+- Users can save trade concepts (localStorage) and compare multiple trade concepts.
+
+---
+## Architectural Decisions
+
+- React Hooks: State is managed using React’s built-in hooks (useState, useEffect) for simplicity and speed.
+- Draft Pick Data Format: Draft pick objects are converted to JSON to enable easy persistence using localStorage (JSON.stringify() / JSON.parse()).
+- Styling: Styled-components are used to provide component-scoped styles and support rapid UI iteration.
+- Trade Evaluation Logic: A straightforward additive model is used to sum normalized pick values per team. This keeps calculations fast and the user interface responsive while allowing room for future enhancements (e.g., more nuanced valuations).
 
 ---
 
@@ -50,6 +58,7 @@ npm run deploy
 ```
 
 ### Future Enhancements 
-- Support 3+ Team Trades
-- Allow users to attach notes to trade concepts/saved trade concepts
-- Support editing saved trades
+- Support 3+ team trades (multi-team trade logic & UI)
+- Attach notes/comments to saved trade concepts
+- Allow edit & update saved trades
+- Implement more nuanced trade evaluations
