@@ -1,13 +1,55 @@
-# React + Vite
+# NBA Draft Trade Simulator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application that allows users to simulate and evaluate NBA draft pick trades between teams. 
 
-Currently, two official plugins are available:
+[View the deployed app](https://deenapederson.github.io/nba-draft-trade-evaluator/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Build trade scenarios involving 2 NBA teams.
+2. Add draft picks for each team for the next 7 years.
+3. Evaluate  and display trade balance using a point-based value system.
+4. Save trade concepts to compare them later.
 
+---
+
+## Tech Stack
+
+- React + Vite
+- Styled Components
+- JavaScript (ES6)
+- GitHub Pages (for deployment)
+
+---
+
+## Implementation Details
+
+- Draft pick values are based on [Draft Pick Trade Value Chart - 2017 Version - Kevin Pelton](http://nbasense.com/draft-pick-trade-value/2/kevin-pelton-2), with each pick assigned a normalized value.
+- Each trade is calculated in real-time using the sum of pick values per team.
+- A basic warning system flags when a trade favors one side.
+- Users can save trade concepts (localStoarage) and compare multiple trade concepts.
+
+---
+
+## Setup Instructions
+
+Clone the repo and run locally:
+
+```bash
+git clone https://github.com/deenapederson/nba-draft-trade-evaluator.git
+cd nba-draft-trade-evaluator
+npm install
+npm run dev
+```
+Deployment Instructions:
+```
+npm run build
+npm run deploy
+```
+
+### Future Enhancements 
+- Support 3+ Team Trades
+- Allow users to attach notes to trade concepts/saved trade concepts
+- Support editing saved trades
