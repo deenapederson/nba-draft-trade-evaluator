@@ -56,7 +56,7 @@ function App() {
     }
 
     if(cardA.picks.length === 0 || cardB.picks.length === 0) {
-      setWarningMessage('Each team must recieve at least one pick to compare')
+      setWarningMessage('Each team must receive at least one pick to compare')
       return
     }
 

@@ -96,7 +96,7 @@ const SavedCard = ({ children, cardData, tradeKey, setSavedTrades, ...props }) =
         <TradeInfoSummary>
           <CardHeader>
             <TradeElement editable={false}>
-              <div>{cardData.cardA.team} Recieve</div>
+              <div>{cardData.cardA.team} Receive</div>
               <div>{cardData.cardA.total_value}</div>
             </TradeElement>
           </CardHeader>
@@ -111,7 +111,7 @@ const SavedCard = ({ children, cardData, tradeKey, setSavedTrades, ...props }) =
         <TradeInfoSummary>
           <CardHeader>
             <TradeElement editable={false}>
-              <div>{cardData.cardB.team} Recieve</div>
+              <div>{cardData.cardB.team} Receive</div>
               <div>{cardData.cardB.total_value}</div>
             </TradeElement>
           </CardHeader>

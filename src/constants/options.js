@@ -1,5 +1,11 @@
-// 7 Years tradable
-export const YEARS = Array.from({ length: 7 }, (_, i) => 2026 + i)
+// Generate a list of the next 7 tradable draft years
+const today = new Date()
+const draftCutoff = new Date(today.getFullYear(), 5, 25)
+
+// If before the draf (June), include next year’s pick
+const startYear = today < draftCutoff ? today.getFullYear() + 1 : today.getFullYear() + 2
+
+export const YEARS = Array.from({ length: 7 }, (_, i) => startYear + i)
 
 // NBA Teams
 export const NBA_TEAMS = [

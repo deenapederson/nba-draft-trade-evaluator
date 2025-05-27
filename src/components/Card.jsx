@@ -154,7 +154,7 @@ const Card = ({ children, cardData, setCardData, otherSelectedTeam, ...props }) 
           <option key='team-default'>Select Team</option>
           {NBA_TEAMS
           .filter((team) => team !== otherSelectedTeam).map((team) => 
-              <option key={`team-${team}`} value={team}>{team} Recieve</option>
+              <option key={`team-${team}`} value={team}>{team} Receive</option>
             )}
 
         </SelectTitle>
