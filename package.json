@@ -1,6 +1,6 @@
 {
   "name": "nba-draft-pick-evaluator",
-  "homepage": "https://deenapederson.github.io/nba-draft-trade-evaluator",
+  "homepage": "https://deenapederson.github.io/nba-draft-trade-evaluator/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
