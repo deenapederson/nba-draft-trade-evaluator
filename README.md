@@ -2,7 +2,7 @@
 
 A web application that allows users to simulate and evaluate NBA draft pick trades between teams. 
 
-[View the deployed app](https://deenapederson.github.io/nba-draft-trade-evaluator/)
+[Deployed Application](https://deenapederson.github.io/nba-draft-trade-evaluator/)
 
 ---
 
@@ -53,7 +53,6 @@ npm run dev
 ```
 Deployment Instructions:
 ```
-npm run build
 npm run deploy
 ```
 
